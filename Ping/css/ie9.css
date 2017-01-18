@@ -1,0 +1,17 @@
+div.caption span{
+  background: none;
+  color: #322539;
+}
+div.about{
+  background-color: #745083;
+}
+li.footer_menu__item{
+  margin-right:11px;
+  margin-left:10px;
+}
+li.footer_menu__item:first-of-type{
+  margin-left:0;
+}
+li.footer_menu__item:last-of-type{
+  margin-right:0;
+}

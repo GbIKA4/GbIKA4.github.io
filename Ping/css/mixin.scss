@@ -1,0 +1,8 @@
+//#color-top = #322539; #color-down = #745083
+@mixin gradient-about($color-top, $color-down){
+  background-image: -webkit-linear-gradient(bottom, $color-top, $color-down);
+  background-image: -moz-linear-gradient(bottom, $color-top, $color-down);
+  background-image: -o-linear-gradient(bottom, $color-top, $color-down);
+  background-image: -ms-linear-gradient(bottom, $color-top, $color-down);
+  background-image: linear-gradient(to top, $color-top, $color-down);
+}

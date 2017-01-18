@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Measurements</title>
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div class="em block">EMs
+      <div class="first">font-size: 0.8em
+        <div class="second">font-size: 0.8em
+          <div class="third">font-size: 0.8em</div>
+        </div>
+      </div>
+    </div>
+    <div class="percent block"><p>PERCENTs (%)</p>
+
+      <div class="father">
+        <p>Parent block have</p>
+        <p>margin-left:100px;</p>
+        <p>and width: 400px;</p>
+        <div class="luke">
+          Child have margin-left:10% <br>
+          in pixel it will be not 10px but 40px,<br>
+          because percent of margin-left depends <br>
+          of parent WIDTH
+        </div>
+      </div>
+
+      <div class="father1">
+        line-height depends of its own
+        font-size. Parent block have
+        {line-height: 40px;
+        and font-size: 30px;}
+        <div class="luke1">
+          Child have {line-height: 100%; font-size: 16px}.
+          It will be 16px
+          like full self font-size,
+          not 40px like full
+          line-height of parent
+        </div>
+      </div>
+
+      <div class="wh">
+        This parent block have width: 400px and height: 600px
+        <div class="fixed">
+          <p>This child block have width: 10% and position: fixed</p>
+          <p>So width of it will be depend of WINDOW's width</p>
+          <p>Neither parents width, nor width of document</p>
+        </div>
+      </div>
+      <div class="father2">
+        Height of this parent block depends of content
+        <div class="luke2">
+          So percent height (30%) of this child block should not work, and replace on height: auto.
+          Except if child block position: absolute;
+        </div>
+      </div>
+    </div>
+    <div class="v block"><p> Vs </p>
+      <div class="vmin">
+        font-size: 2vmin;
+        <p>Resize the browser window (both width and height) to see how the font-size changes.</p>
+        <p>1vmin = 1vw or 1vh, whichever is smaller.</p>
+        <p>The vmin unit is not supported in IE8 and earlier.</p>
+      </div>
+      <div class="vmax">
+        font-size: 2vmax;
+        <p>Resize the browser window (both width and height) to see how the font-size changes.</p>
+        <p>1vmax = 1vw or 1vh, whichever is larger.</p>
+        <p>The vmax unit is not supported in Internet Explorer or Safari.</p>
+      </div>
+      <div class="vw">
+        font-size: 2vw;
+        <p>Resize the width of the browser window to see how the font-size changes.</p>
+        <p>1vw = 1% of viewport width.</p>
+        <p>The vw unit is not supported in IE8 and earlier.</p>
+      </div>
+      <div class="vh">
+        font-size: 2vh;
+        <p>Resize the height of the browser window to see how the font-size changes.</p>
+        <p>1vh = 1% of viewport height.</p>
+        <p>The vh unit is not supported in IE8 and earlier.</p>
+      </div>
+    </div>
+    <div class="rare block"> <p>Some rare measurements</p>
+      <div class="ex">ex - size of 'x' char</div>
+      <div class="ch">ch - size of '0' char</div>
+      <div class="cm">cm - centimeters</div>
+      <div class="mm">mm - millimetrs</div>
+      <div class="in">in - inches (1in = 96px = 2.54cm)</div>
+      <div class="px">px - pixels (1px = 1/96th of 1in)</div>
+      <div class="pt">pt - points (1pt = 1/72th of 1in)</div>
+      <div class="pc">pc - picas (1pc = 12pt)</div>
+    </div>
+
+
+  </body>
+</html>

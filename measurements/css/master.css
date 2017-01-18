@@ -1,0 +1,119 @@
+*{
+	transition: all 300ms ease-in-out;
+}
+:root{
+	font-size: 3em;
+	font-size: 300%;
+}
+
+html{
+	font-size: 48px;
+	font-size: 300%;
+}
+body{
+	font-size: 3em;
+	font-size: 64px;
+}
+.em div{
+	margin: 0.25em 0.5em;
+	font-size: 0.8em;
+}
+div{
+	font-size: 0.8rem;
+}
+.first{
+	background: #050;
+}
+.second{
+	background: #090;
+}
+.third{
+	background: #0f0;
+}
+.block{
+	margin: 1em;
+	/*padding: 1em;*/
+}
+.father {
+	background: #009;
+	margin-left: 100px;
+	margin-right: 100px;
+	width: 400px;
+	height: 500px;
+	color: white;
+}
+.father p{
+	padding: 0;
+	margin: 0;
+}
+.luke{
+	background: #00f;
+	margin: 10%;
+}
+.father1{
+	background: #909;
+	line-height: 40px;
+	font-size: 30px;
+	width: 300px;
+	height: 300px;
+}
+.luke1{
+	background: #f0f;
+	margin: 1em;
+	font-size: 16px;
+	line-height: 100%;
+}
+.father2{
+	background: #fff;
+}
+.luke2{
+	margin: 1em;
+	height: 30%;
+}
+.wh{
+	background: #900;
+	width: 400px;
+	height: 600px;
+}
+.fixed{ /*make tranparent*/
+	background: #f00;
+	position: fixed;
+	width: 50%;
+	top: 400px;
+	right: 1rem;
+	z-index: -1;
+}
+
+.v{
+	margin-top: -1em;
+	padding-top: 1em;
+	background: #fff;
+}
+.vmin{
+	background: #0f0;
+	font-size: 2vmin;
+}
+.vmax{
+	background: #0f0;
+	font-size: 2vmax;
+}
+.vw{
+	background: #0f0;
+	font-size: 2vw;
+}
+.vh{
+	background: #0f0;
+	font-size: 2vh;
+}
+.rare{
+	margin-top: -1em;
+	padding-top: 1em;
+	background: #fff;
+}
+.rare div{
+	background: #0ff;
+}
+.block>p{
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
