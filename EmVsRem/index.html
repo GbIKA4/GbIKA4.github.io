@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EmVSRem</title>
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+	<h1> <span>Rem</span> vs <span>Em</span> & how to use them</h1>
+	<p>Here is the example of usage some css units. With px (pixels) all clear for understanding. But how does it work with such units like <span>Em</span> and <span>Rem</span>?</p>
+	<p>This page was made with these units. It is adaptive, so you can try to change page size. When page witdh is bellow 800 pixels font scaling for comfortable reading. How can we reach that? It's simple - we will use adaptive units - <span>Rem</span> and <span>Em</span> </p>
+	<p>The button bellow is anchor with some css. Font size of it set in <span>Rem</span>, and all sizes related, like padding, border, border-radius are in <span>Em</span>. Why do that? Could we set all in <span>Rem</span>? Yes, we could, but then we get some addaptive style corruption. If we set all in <span>Rem</span> - all unit in this button would be related with main font size, not font size of button. So we've to calculate each size for for this button considering of main font size and font size of button itself. Or we can set sizes in <span>Em</span>, that do this for us.</p>
+	<a href="#" class="button button_em">em button</a>
+	<p>You can click this button to see how does it look like with only <span>Rem</span> </p>
+
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/style.js"></script>
+</body>
+</html>

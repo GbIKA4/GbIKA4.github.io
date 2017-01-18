@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>ClassWar</title>
+	<link rel="stylesheet" type="text/css" href="css\master.css">
+</head>
+<body ng-cloak>
+
+	<!-- <div class="" ng-controller="buildCtrl as buildCtrl">
+		<img src={{buildCtrl.builds[1].img}} alt={{buildCtrl.builds[1].class}}>
+	</div> -->
+
+	<div class="ui ui-window" ng-controller="mapCtrl as mapCtrl">
+		<div class="ui-map-panel">
+			<div class="map-wrapper">
+				<render-map-dir></render-map-dir>
+			</div>
+		</div> <!--end of map-panel-->
+		<div class="ui-control-panel" ng-controller="uiCtrl as uiCtrl">
+			<div class="ui-button-panel">
+				<div class="ui-event button">event</div>
+				<div class="ui-status button">status</div>
+				<div class="ui-upgrade button">upgrade</div>
+				<div class="ui-min-map button">min-map</div>
+			</div> <!--end of button-panel-->
+			<div class="ui-event panel">
+				<div class="ui-handle bar">handleBar</div>
+				<div class="ui-event-log bar">
+					eventLog
+					<div>
+						{{mapCtrl.eventStr}}
+					</div>
+				</div>
+			</div> <!--end of event panel-->
+			<div class="ui-status panel">
+				<div class="ui-attr bar">
+					attrBar
+					<render-attr-dir></render-attr-dir>
+				</div>
+				<div class="ui-select bar">selectBar</div>
+			</div> <!--end of status panel-->
+			<div class="ui-upgrade panel">
+				<div class="ui-level-up bar">levelUpBar</div>
+				<div class="ui-preview bar">previewBar</div>
+			</div> <!--end of upgrade panel-->
+			<div class="ui-min-map panel">
+				minMapPanel
+				<div class="min-map-wrapper">
+
+					<div class="min-map-cell {{uiCtrl.minMapWindow.cells[cells.id].style}}" ng-repeat="cells in uiCtrl.minMapWindow.cells track by cells.id" ng-click="uiCtrl.cellClick(cells.id)">
+						{{cells.status}}
+					</div>
+
+				</div>
+
+			</div> <!--end of min-map panel-->
+		</div> <!--end of control-panel-->
+
+	</div> <!--end of ui-window-->
+
+	<!-- <div class="map" ng-controller="mapCtrl as mapCtrl">
+		<div class="cell" ng-repeat="renderCells in mapCtrl.map.renderCells track by $index" ng-click="mapCtrl.cellClick(mapCtrl.map.renderCells[$index])">
+			X: {{renderCells.coords.x}} <br>
+			Y: {{renderCells.coords.y}} <br>
+
+		</div>
+
+		<div class="ui">
+			<div class="status-bar">
+				<div ng-if="!mapCtrl.selection.obj.isSelected">
+					<div ng-if="mapCtrl.clickedCell.isFree">
+						Cell Status: Free <br>
+						Cell X: {{mapCtrl.clickedCell.coords.x}} <br>
+						Cell Y: {{mapCtrl.clickedCell.coords.y}} <br>
+					</div>
+					<div ng-if="mapCtrl.clickedCell.isResource" ng-controller="resCtrl as resCtrl">
+						Cell Status: Resource <br>
+						Res Type: {{resCtrl.resource[mapCtrl.clickedCell.prisonedId].type}} <br>
+						Res Quantity: {{resCtrl.resource[mapCtrl.clickedCell.prisonedId].uantity}} <br>
+						Cell X: {{mapCtrl.clickedCell.coords.x}} <br>
+						Cell Y: {{mapCtrl.clickedCell.coords.y}} <br>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div> -->
+
+
+
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/ctrls/mapCtrl.js"></script>
+	<script type="text/javascript" src="js/ctrls/unitCtrl.js"></script>
+	<script type="text/javascript" src="js/ctrls/resCtrl.js"></script>
+	<script type="text/javascript" src="js/ctrls/playerCtrl.js"></script>
+	<script type="text/javascript" src="js/ctrls/uiCtrl.js"></script>
+	<script type="text/javascript" src="js/ctrls/buildCtrl.js"></script>
+	<script type="text/javascript" src="js/facts/mapFactory.js"></script>
+	<script type="text/javascript" src="js/facts/unitFactory.js"></script>
+	<script type="text/javascript" src="js/facts/resFactory.js"></script>
+	<script type="text/javascript" src="js/facts/playerFactory.js"></script>
+	<script type="text/javascript" src="js/facts/uiFactory.js"></script>
+	<script type="text/javascript" src="js/facts/buildFactory.js"></script>
+
+	<script type="text/javascript" src="js/dirs/renderMapDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderUnitDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderResDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderBuildsDir.js"></script>
+
+	<script type="text/javascript" src="js/dirs/renderAttrDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderCellAttrDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderUnitAttrDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderResAttrDir.js"></script>
+	<script type="text/javascript" src="js/dirs/renderBuildsAttrDir.js"></script>
+
+
+	<script type="text/javascript" src="js/mvc/renderFactory.js"></script>
+	<script type="text/javascript" src="js/mvc/renderCtrl.js"></script>
+</body>
+</html>
